@@ -13,10 +13,17 @@
 }
 
 // Transitions
-@mixin transit {
+@mixin transit($duration: 0.2s) {
   transition: all 0.2s ease-in-out;
   @media only screen and (prefers-reduced-motion) {
     transition: none;
+  }
+}
+
+// Mobile-first media queries
+@mixin query($breakpoint: 480px) {
+  @media (min-width: $breakpoint) {
+    @content;
   }
 }
 
@@ -73,12 +80,13 @@ body {
   font-kerning: normal;
   text-rendering: optimizeSpeed;
   position: relative;
-  max-width: 100vw;
   overflow-x: hidden;
 
   // Layout
   margin: auto;
-  max-width: 35rem;
+  margin-top: clamp(1.25rem, 10vw, 10vh);
+  padding: 2.5rem;
+  max-width: 48rem;
 }
 
 a {
@@ -89,9 +97,43 @@ a {
   }
 }
 
+h1 {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+  li {
+    display: inline-block;
+    &:not(:last-child)::after{
+      content: '・'
+    }
+  }
+
+  // Typography
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  // Layout
+  margin: 1.25rem 0;
+}
+
 // Decorative
 // ==========
 
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
 .rounded {
-  border-radius: 100%;
+  border-radius: 15px;
+}
+
+.float-right {
+  @include query(680px) {
+    float: right;
+    margin: 0 0 1.25rem 1.25rem;
+  }
 }

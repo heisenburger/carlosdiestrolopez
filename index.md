@@ -2,11 +2,11 @@
 
 ---
 
-<img src="/images/carlosdiestro.jpg" alt="A photo of me taken in New Zealand. In the background there is a lake and Mount Taranaki." width="200" class="rounded" />
+<img src="/images/carlosdiestro.jpg" alt="A photo of me taken in New Zealand. In the background there is a lake and Mount Taranaki." width="200" class="rounded float-right" />
 
 # Carlos Diestro López
 
-Android Engineer
+<p class="caps">Android Engineer</p>
 
 - [Email](carlosdiestro4@gmail.com)
 - [LinkedIn](linkedin.com/in/cdiestrolopez)
