@@ -4,9 +4,19 @@
 
 // Helpers
 // =======
+
+// Dark mode
 @mixin dark() {
   @media only screen and (prefers-color-scheme: dark) {
     @content
+  }
+}
+
+// Transitions
+@mixin transit {
+  transition: all 0.2s ease-in-out;
+  @media only screen and (prefers-reduced-motion) {
+    transition: none;
   }
 }
 
@@ -40,11 +50,10 @@ dl, dd, ol, ul, figure {
 // Colours
   --foreground: black;
   --background: white;
-  --accent: blue;
+  --accent: yellow;
   @include dark {
     --foreground: white;
     --background: black;
-    --accent: blue;
   }
 }
 
@@ -66,4 +75,23 @@ body {
   position: relative;
   max-width: 100vw;
   overflow-x: hidden;
+
+  // Layout
+  margin: auto;
+  max-width: 35rem;
+}
+
+a {
+  color: var(--foreground);
+    @include transit;
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+// Decorative
+// ==========
+
+.rounded {
+  border-radius: 100%;
 }
