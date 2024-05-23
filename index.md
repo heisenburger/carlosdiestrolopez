@@ -8,9 +8,9 @@
 
 <p class="caps">Android Engineer</p>
 
-- [Email](carlosdiestro4@gmail.com)
-- [LinkedIn](linkedin.com/in/cdiestrolopez)
-- [GitHub](github.com/K4rLiToX)
+- [Email](mailto:carlosdiestro4@gmail.com)
+- [LinkedIn](https://linkedin.com/in/cdiestrolopez)
+- [GitHub](https://github.com/K4rLiToX)
 
 I specialize in crafting readable, scalable code and processes, tailored to each use case while prioritizing
 simplicity. I like to challenge the status quo while understanding its foundations. I enjoy researching trade-offs and collaborating with teammates to reach optimal solutions, as well as offering proactive support to others in times of difficulty.
