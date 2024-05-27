@@ -8,7 +8,7 @@
 
 <p class="caps">Android Engineer</p>
 
-- [Email](mailto:carlosdiestro4@gmail.com)
+- [Email](mailto:carlosdiestro4 at gmail dot com)
 - [LinkedIn](https://linkedin.com/in/cdiestrolopez)
 - [GitHub](https://github.com/K4rLiToX)
 
