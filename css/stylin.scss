@@ -55,12 +55,13 @@ dl, dd, ol, ul, figure {
     serif;
 
 // Colours
-  --foreground: black;
-  --background: white;
-  --accent: #5278ac;
+  --primary: #2C6197;
+  --surface: #F9F9FE;
+  --onSurface: #191C1F;
   @include dark {
-    --foreground: white;
-    --background: black;
+    --primary: #A7CDFF;
+    --surface: #37393D;
+    --onSurface: #FAFAFA;
   }
 }
 
@@ -74,8 +75,8 @@ html {
 body {
   font-family: var(--ff-sans);
   line-height: 1.5;
-  color: var(--foreground);
-  background-color: var(--background);
+  color: var(--onSurface);
+  background-color: var(--surface);
   font-feature-settings: "kern" 1,"liga" 1,"calt" 1,"pnum" 1,"tnum" 0,"onum" 1,"lnum" 0,"dlig" 0;
   font-kerning: normal;
   text-rendering: optimizeSpeed;
@@ -90,10 +91,10 @@ body {
 }
 
 a {
-  color: var(--foreground);
+  color: var(--primary);
     @include transit;
   &:hover {
-    color: var(--accent);
+    color: var(--primary);
   }
 }
 
