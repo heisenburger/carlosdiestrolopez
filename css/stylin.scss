@@ -56,10 +56,12 @@ dl, dd, ol, ul, figure {
 
 // Colours
   --primary: #2C6197;
+  --primaryVariant: #00294C;
   --surface: #F9F9FE;
   --onSurface: #191C1F;
   @include dark {
     --primary: #A7CDFF;
+    --primaryVariant: #74A4DF;
     --surface: #37393D;
     --onSurface: #FAFAFA;
   }
@@ -94,7 +96,7 @@ a {
   color: var(--primary);
     @include transit;
   &:hover {
-    color: var(--primary);
+    color: var(--primaryVariant);
   }
 }
 
